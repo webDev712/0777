@@ -1,9 +1,9 @@
 div:has(> .employee-card) {
     display: grid;
-    grid-template-columns: calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
+    grid-template-columns: calc(33% - 20px) calc(33% - 20px) calc(33% - 20px) ;
     width: 80%;
     margin: 70px auto auto auto;
-    gap: 26px;
+    gap: 35px;
 }
 
 

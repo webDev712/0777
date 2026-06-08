@@ -37,7 +37,7 @@ const ContactForm = () => {
         <div id='contact' className="contact">
             {loading && (<Loader></Loader>)}
             <h2>Get in Touch</h2>
-            <p>Tell us about your project and we'll get back to you within 24 hours</p>
+            <p>Tell us about your project and we'll get back to you ASAP</p>
             <form onSubmit={handleSubmit}>
                 <label>
                     <div>Name *</div>
