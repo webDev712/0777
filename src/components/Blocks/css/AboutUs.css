@@ -1,0 +1,9 @@
+.about-us > div{
+    width: 80%;
+    margin: 60px auto auto auto;
+}
+
+.about-us > div > video {
+    width: 100%;
+    box-shadow: 0px 5px 9px 2px #0000004f;
+}

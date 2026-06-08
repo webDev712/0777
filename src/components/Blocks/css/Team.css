@@ -1,14 +1,16 @@
 div:has(> .employee-card) {
     display: grid;
-    grid-template-columns: calc(30% - 13px) calc(30% - 13px) calc(30% - 13px);
+    grid-template-columns: calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
     width: 80%;
     margin: 70px auto auto auto;
-    gap: 40px;
+    gap: 26px;
 }
 
 
 .employee-card > img{
-    width: 100%;
+    width: 80%;
+    margin: auto auto 30px auto;
+    display: block;
 }
 
 .employee-card > div{

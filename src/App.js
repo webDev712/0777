@@ -13,6 +13,7 @@ import Team from './components/Blocks/Team';
 import { useEffect } from 'react';
 import './mobile.css';
 import './App.css';
+import Notice from './components/Blocks/Notice';
 
 function App() {
   useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
       <WhyUS />
       <LetsAutomate />
       <ContactForm />
+      <Notice />
     </div>
   );
 }
