@@ -12,7 +12,7 @@ const WhyUS = () => {
                 </div>
                 <div data-id="puzzle">
                     <div>API Integration Expertise</div>
-                    <p>Deep experience with Stripe, Shopify, HubSpot, Salesforce, and custom APIs</p>
+                    <p>Deep experience with Stripe, Shopify, HubSpot, Salesforce, Zoho, QuickBooks, and custom APIs</p>
                 </div>
                 <div data-id="energy-big">
                     <div>Automation-First Approach</div>
