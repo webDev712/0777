@@ -6,6 +6,7 @@ import TrustedBy from './components/Small/TrustedBy';
 import Services from './components/Blocks/Services';
 import AboutUs from './components/Blocks/AboutUs';
 import FromTo from './components/Blocks/FromTo';
+import { ToastContainer } from "react-toastify";
 import WhyUS from './components/Blocks/WhyUS';
 import Hero from './components/Blocks/Hero';
 import Team from './components/Blocks/Team';
@@ -30,6 +31,7 @@ function App() {
     }, []);
   return (
     <div className="App">
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick pauseOnHover draggable theme="light" />
       <Hero />
       <TrustedBy />
       <AboutUs />

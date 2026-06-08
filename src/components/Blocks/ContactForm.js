@@ -1,11 +1,15 @@
+import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-toastify";
+import Loader from "../Small/Loader";
+import { useState } from "react";
 import './css/ContactForm.css'
 
 const ContactForm = () => {
-     const handleSubmit = (e) => {
+    const [loading, setLoading] = useState(false);
+    const handleSubmit = async (e) => {
+        setLoading(true)
         e.preventDefault();
-
         const formData = new FormData(e.target);
-
         const data = {
             name: formData.get("name"),
             email: formData.get("email"),
@@ -13,10 +17,25 @@ const ContactForm = () => {
             message: formData.get("message"),
         };
 
-        console.log(data);
+        try {
+            await fetch('https://script.google.com/macros/s/AKfycbxBbPVFTIdtxMeMC-mPr2oM2XSHpnaKpB7cUL8gAk-ZwVHJzWmE7DfdBKhBi20bjQJK/exec', {
+                method: "POST",
+                body: JSON.stringify(data),
+                headers: {
+                    "Content-Type": "text/plain"
+                }
+            });
+            toast.success("Thank you! We will reach to you soon!");
+            e.target.reset();
+        } catch (err) {
+            console.error(err);
+            toast.error("Something went wrong, try again later.");
+        }
+        setLoading(false)
     };
     return (
         <div id='contact'>
+            {loading && (<Loader></Loader>)}
             <h2>Get in Touch</h2>
             <p>Tell us about your project and we'll get back to you within 24 hours</p>
             <form onSubmit={handleSubmit}>
