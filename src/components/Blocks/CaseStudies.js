@@ -47,7 +47,7 @@ const CaseStudies = () => {
                     results={{
                         less_graph: {name: 'Time saved', value: '80%'}, 
                         task: {name: "Manual Errors", value: '0'}, 
-                        energy: {name: "Sales team satisfaction", value: '0'}}}
+                        energy: {name: "Sales team satisfaction", value: '100%'}}}
                     specs={['Stripe API', 'HubSpot', 'Custom CRM']}/>
                 <CaseStudie 
                     name={"Shopify Inventory + Analytics Integration"} 
@@ -56,7 +56,7 @@ const CaseStudies = () => {
                     results={{
                         less_graph: {name: 'Inventory errors', value: '-95%'}, 
                         task: {name: "Fulfillment speed", value: '+40%'}, 
-                        energy: {name: "Data latency", value: 'Fulfillment speed'}}}
+                        energy: {name: "Data latency", value: '-95%'}}}
                     specs={['Shopify', 'Google Analytics', 'eCommerce']}/>
                 <CaseStudie 
                     name={"Zoho CRM + Multi-System Integration & Reporting"} 
