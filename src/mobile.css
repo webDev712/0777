@@ -1,0 +1,22 @@
+@media (max-width: 768px){
+    
+    .App > div > h1,
+    .App > div > h2,
+    .App > div > h3,
+    .App > div > h4,
+    .App > div > h5,
+    .App > div > h6,
+    .App > div > p{
+        max-width: 90% !important;
+    }
+    h1, h2{
+        font-size: 50px !important;
+    }
+    p{
+        font-size: 20px;
+    }
+
+    .App > div:first-child{
+        padding-top: 60px;
+    }
+}

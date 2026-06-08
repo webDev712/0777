@@ -1,0 +1,43 @@
+div:has(> .employee-card) {
+    display: grid;
+    grid-template-columns: calc(30% - 13px) calc(30% - 13px) calc(30% - 13px);
+    width: 80%;
+    margin: 70px auto auto auto;
+    gap: 40px;
+}
+
+
+.employee-card > img{
+    width: 100%;
+}
+
+.employee-card > div{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.employee-card > p{
+    color: #1d1d1d;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.employee-card img{
+    transition: transform 0.2s ease;
+}
+
+
+.employee-card:hover img{
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+    div:has(> .employee-card){
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+.why-us > div{
+    width: 80%;
+    margin: 60px auto auto auto;
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+}
+
+.why-us > div > div{
+    padding-top: 130px;
+    background-position: top 0 center;
+    text-align: center;
+}
+
+[data-id="team"]{
+    background-image: url('../../../../public/team.svg');
+}
+[data-id="puzzle"]{
+    background-image: url('../../../../public/puzzle.svg');
+}
+[data-id="energy-big"]{
+    background-image: url('../../../../public/energy-big.svg');
+}
+[data-id="goal"]{
+    background-image: url('../../../../public/goal.svg');
+}
+
+.why-us > div > div > div{
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.why-us > div > div > p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .why-us > div{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

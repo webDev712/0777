@@ -1,0 +1,124 @@
+.case-studies > div{
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    gap: 20px;
+    width: 80%;
+    margin: 60px auto auto auto;
+}
+
+.case-studies > div > div{
+    border: 1px solid #9d9d9dbe;
+    padding: 30px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 9px 2px #00000009;
+    position: relative;
+    transition: all 0.2s ease
+}
+
+.case-studies > div > div:hover{
+    transform: scale(1.02);
+}
+
+.case-studies > div > div::before{
+    content: " ";
+    width: 100%;
+    height: 8px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.case-studies > div > div:first-child:before{
+    background: linear-gradient(0deg, #1145ff, #b12bff);
+}
+.case-studies > div > div:nth-child(2):before{
+    background: linear-gradient(0deg, #7AD9FF, #00B28E);
+}
+
+.case-studies > div > div > div{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.case-studies > div > div span{
+    font-size: 15px;
+    color: #979797;
+    font-weight: 300;
+    margin: 10px 0;
+    display: block;
+}
+.case-studies > div > div > p{
+    font-size: 18px;
+    color: #1d1d1d;
+    font-weight: 300;
+    display: block;
+}
+
+.case-studies > div > div > div:nth-child(6){
+    background-color: #f1f3ff6c;
+    padding: 22px 20px 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.case-studies > div > div > div:nth-child(6) > div{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.case-studies > div > div > div:nth-child(6) > div > div{
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+
+div:has( > [data-id="less-graph"]){
+    background-image: url('../../../../public/less-graph.svg');
+    background-position: top 0 left 50%;
+}
+
+div:has( > [data-id="energy"]){
+    background-image: url('../../../../public/energy.svg');
+    background-position: top 0 left 50%;
+}
+
+div:has( > [data-id="task"]){
+    background-image: url('../../../../public/task.svg');
+    background-position: top 0 left 50%;
+}
+
+.case-studies > div > div > div:nth-child(7){
+    display: flex;
+    margin: 20px 0 0 0;
+    gap: 5px;
+}
+
+.case-studies > div > div > div:nth-child(7) > div{
+    color: #AB5DFF;
+    background-color: #E4ECFF;
+    font-size: 14px;
+    padding: 5px 10px;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .case-studies > div{
+        grid-template-columns: 100%;
+    }
+
+    .case-studies > div > div > div:nth-child(6) > div{
+        grid-template-columns: 100%;
+    }
+
+    .case-studies > div > div > div:nth-child(7){
+        flex-wrap: wrap;
+    }
+
+    .case-studies > div > div > div:nth-child(7) > div{
+        text-wrap-mode: nowrap;
+    }
+}

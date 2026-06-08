@@ -1,0 +1,75 @@
+form{
+    width: 60%;
+    margin: 40px auto auto auto;
+    border: 1px solid #9d9d9d28;
+    border-radius: 25px;
+    box-shadow: 0px 5px 9px 2px #00000009;
+    padding: 25px 28px 28px 28px;
+}
+
+form > label > div{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form > label > *:not(div){
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #DADFEA;
+    background-color: #F1F5FF;
+    width: calc(100% - 20px);
+}
+
+form > label{
+    margin-top: 8px;
+    height: max-content;
+    display: block;
+}
+
+form > label + label{
+    margin-top: 25px;
+}
+
+form > label > textarea{
+    min-height: 100px;
+}
+
+form > button{
+    color: white;
+    background-color: rgb(34, 63, 252);
+    box-shadow: rgba(34, 63, 252, 0.115) 0px 2px 4px 3px;
+    display: flex;
+    flex-direction: row;
+    width: calc(100%);
+    font-size: 26px;
+    padding: 20px 24px;
+    border-radius: 18px;
+    margin: 20px auto auto auto;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    transform-origin: center;
+    line-height: 1;
+    border: 0;
+}
+
+form > button > span{
+    background-image: url('../../../../public/tg.svg');
+    background-position: right 0 top 70%;
+    padding-right: 28px;
+    background-size: 20px;
+    margin: auto;
+}
+
+form > button:hover {
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 768px) {
+    form{
+        width: 80%;
+    }
+}

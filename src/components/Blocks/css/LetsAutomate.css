@@ -1,0 +1,20 @@
+.lets-automate{
+    background: url('../../../../public/bg-lets-automate.png'), linear-gradient(173deg, #0000ffba, #4171ffba);
+    background-size: 100%;
+}
+
+.lets-automate > p,
+.lets-automate > h2{
+    color: white !important;
+}
+
+.lets-automate > div{
+    margin: 100px auto 100px auto !important;
+}
+
+@media (max-width: 768px) {
+    .lets-automate{
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+}

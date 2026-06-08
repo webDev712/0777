@@ -1,0 +1,100 @@
+.technologies{
+    background-color: #ededed25;
+}
+
+.technologies > div{
+    display: flex;
+    gap: 8px;
+    width: 60%;
+    margin: 40px auto auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technologies > div > div{
+    width: max-content;
+    border-radius: 10px;
+    padding: 5px 12px;
+    box-shadow: 0px 2px 3px 0px #0000000d;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.technologies > div > div:hover{
+    transform: scale(1.2);
+}
+
+.technologies > div > div:nth-child(1){
+    background-color: #81a7ff42;
+    color: #81A6FF;
+}
+
+.technologies > div > div:nth-child(2){
+    background-color: #9494945a;
+    color: #949494;
+}
+
+.technologies > div > div:nth-child(3){
+    background-color: #30907374;
+    color: #309073;
+}
+
+.technologies > div > div:nth-child(4){
+    background-color: #4f55b16e;
+    color: #4F56B1;
+}
+
+
+.technologies > div > div:nth-child(5){
+    background-color: #3e6b9e76;
+    color: #3E6B9E;
+}
+
+
+.technologies > div > div:nth-child(6){
+    background-color: #c452c07b;
+    color: #C452C0;
+}
+
+
+.technologies > div > div:nth-child(7){
+    background-color: #4a964f7f;
+    color: #4A964F;
+}
+
+
+.technologies > div > div:nth-child(8){
+    background-color: #944b3b6f;
+    color: #944C3B;
+}
+
+
+.technologies > div > div:nth-child(9){
+    background-color: #7472b37b;
+    color: #7472B3;
+}
+
+
+.technologies > div > div:nth-child(10){
+    background-color: #4ba4727f;
+    color: #4BA471;
+}
+
+
+.technologies > div > div:nth-child(11){
+    background-color: #94949480;
+    color: #949494;
+}
+
+
+.technologies > div > div:nth-child(12){
+    background-color: #3090737b;
+    color: #309073;
+}
+
+
+.technologies > div > div:nth-child(13){
+    background-color: #7977b87b;
+    color: #7977B8;
+}
+

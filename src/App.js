@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import Technologies from './components/Blocks/Technologies';
+import LetsAutomate from './components/Blocks/LetsAutomate';
+import CaseStudies from './components/Blocks/CaseStudies';
+import ContactForm from './components/Blocks/ContactForm';
+import TrustedBy from './components/Small/TrustedBy';
+import Services from './components/Blocks/Services';
+import AboutUs from './components/Blocks/AboutUs';
+import FromTo from './components/Blocks/FromTo';
+import WhyUS from './components/Blocks/WhyUS';
+import Hero from './components/Blocks/Hero';
+import Team from './components/Blocks/Team';
+import { useEffect } from 'react';
+import './mobile.css';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
+
+        const sections = document.querySelectorAll(".App > div");
+        sections.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero />
+      <TrustedBy />
+      <AboutUs />
+      <Services />
+      <Team />
+      <FromTo />
+      <CaseStudies />
+      <Technologies />
+      <WhyUS />
+      <LetsAutomate />
+      <ContactForm />
     </div>
   );
 }

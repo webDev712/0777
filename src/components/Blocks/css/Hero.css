@@ -1,0 +1,86 @@
+.hero > h1 > span{
+    background: linear-gradient(90deg, #0009FF, #5ACBFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center !important;
+}
+
+.hero{
+    background-image: url('../../../../public/hero_bg.png');
+    background-size: 100%;
+    padding-bottom: 120px !important;
+}
+
+.hero > *{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+    
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero > [data-id="icons"] {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    color: #2a2a2a;
+    line-height: 1.5;
+    margin: auto;
+    width: max-content;
+    background-color: #e4f0ff73;
+    border: 1px solid #BBD9FF;
+    border-radius: 50px;
+    padding: 7px 17px;
+    margin-bottom: 30px;
+}
+
+.hero > [data-id="icons"] > span{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+
+.hero > [data-id="icons"] > span:nth-child(1) {
+    background-image: url('../../../../public/icon_1.svg');
+}
+.hero > [data-id="icons"] > span:nth-child(2) {
+    background-image: url('../../../../public/icon_2.svg');
+}
+.hero > [data-id="icons"] > span:nth-child(3) {
+    background-image: url('../../../../public/icon_3.svg');
+}
+
+@media (max-width: 768px) {
+    .hero{
+        background-size: 200%;
+    }
+    .hero > [data-id="icons"] {
+        max-width: calc(100% - 70px);
+        text-align: center;
+        height: max-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a b c"
+            "d d d";
+    }
+
+    .hero > [data-id="icons"] > span:nth-child(1){ grid-area: a;}
+    .hero > [data-id="icons"] > span:nth-child(2){ grid-area: b;}
+    .hero > [data-id="icons"] > span:nth-child(3){ grid-area: c;}
+    .hero > [data-id="icons"] > div{ grid-area: d;}
+    .hero > [data-id="icons"] > span{
+        background-position: center;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
