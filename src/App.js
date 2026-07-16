@@ -4,16 +4,17 @@ import CaseStudies from './components/Blocks/CaseStudies';
 import ContactForm from './components/Blocks/ContactForm';
 import TrustedBy from './components/Small/TrustedBy';
 import Services from './components/Blocks/Services';
+import { Analytics } from '@vercel/analytics/react';
 import AboutUs from './components/Blocks/AboutUs';
 import FromTo from './components/Blocks/FromTo';
 import { ToastContainer } from "react-toastify";
+import Notice from './components/Blocks/Notice';
 import WhyUS from './components/Blocks/WhyUS';
 import Hero from './components/Blocks/Hero';
 import Team from './components/Blocks/Team';
 import { useEffect } from 'react';
 import './mobile.css';
 import './App.css';
-import Notice from './components/Blocks/Notice';
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,7 @@ function App() {
       <LetsAutomate />
       <ContactForm />
       <Notice />
+      <Analytics />
     </div>
   );
 }
